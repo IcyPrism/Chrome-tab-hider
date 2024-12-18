@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Incognito Tabs",
+  "version": "1.0",
+  "description": "Roam any websites under the eyes of your supervisors. Doesn't affect browser history. Made by Prism",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icon.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
